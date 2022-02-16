@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --poppins-ft: "Poppins", sans-serif;
+  --mulish-ft: "Mulish", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: var(--poppins-ft);
+}
+
+body {
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 100vh;
+}
+
+header {
+  padding: 2rem 0;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-list li {
+  margin: 0 30px;
+}
+
+.nav-list li a {
+  color: #fff;
+}
+
+.hero-content {
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-content p {
+  margin-bottom: 2rem;
+  max-width: 375px;
+}
+
+/* Nav btn */
+
+.btn-nav {
+  display: inline-block;
+  background: #3ec290;
+  padding: 8px 35px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.nav-list li:last-child {
+  margin: 0;
+}
+
+/* Brand Section */
+
+.brand .grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.brand .grid .img-box {
+  justify-self: center;
+}
+
+.brand .text-lead {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 50px;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* About Section */
+
+.about .sub-text {
+  font-weight: 200;
+  opacity: 0.9;
+  text-align: center;
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about .card {
+  color: #fff;
+}
+
+.about .card-text {
+  padding: 30px 0;
+}
+
+.about .card h2 {
+  font-weight: 300;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+/* Hamburger menu */
+
+label {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#hamburger {
+  display: none;
+}
+
+.hamburger-bars {
+  position: relative;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger-bars::before,
+.hamburger-bars::after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+}
+
+.hamburger-bars::before {
+  transform: translateY(-11px);
+}
+
+.hamburger-bars::after {
+  transform: translateY(11px);
+}
+
+/* Sign Up */
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+form p {
+  margin: 0.5rem;
+}
+
+.light {
+  color: #000 !important;
+  opacity: 1;
+}
+
+.dark {
+  text-align: center;
+  padding-bottom: 30px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.form-control-light {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.form-control .btn {
+  width: 100%;
+  text-align: center;
+}
+
+.form-control input {
+  padding: 1rem 1.5rem;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  color: #3ec290;
+}
+
+span {
+  color: #3ec290;
+}
+
+/* Footer */
+footer .grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: flex-start;
+}
+
+footer .inner-footer .col img {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+footer .inner-footer .col p {
+  margin: 0.5rem 0;
+}
+
+/* Utilities  */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #3ec290;
+  padding: 8px 35px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.dark-bg {
+  background: #000;
+}
+
+.text-lead {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.sub-text {
+  font-weight: 200;
+  opacity: 0.9;
+  text-align: center;
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+/* Padding */
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-50 {
+  padding: 50px 0;
+}
+
+.py-100 {
+  padding: 100px 0;
+}
+
+/* Tablet View */
+
+@media (max-width: 769px) {
+  .navbar .nav-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    background: #000;
+    border-top: 1px solid #fff;
+    display: none;
+  }
+  .nav-list li {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+  #hamburger:checked ~ .nav-list {
+    display: flex;
+  }
+  label {
+    display: flex;
+  }
+  form {
+    max-width: 100%;
+  }
+  .card {
+    text-align: center;
+  }
+  .card img {
+    margin: 0 auto;
+  }
+}
